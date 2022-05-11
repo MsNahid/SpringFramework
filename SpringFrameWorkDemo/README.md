@@ -1,6 +1,5 @@
 # Spring Core
-## Spring Ioc container
-
+**Spring Ioc container**
 - Create Object
 - Manage Lifecycle Of Object
 - Inject Object at run time
@@ -8,6 +7,3 @@
 - ApplicationContext Interface
 - ClassPathXmlApplicationContext
 
-
-
-   
