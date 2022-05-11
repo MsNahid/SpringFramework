@@ -1,0 +1,19 @@
+package com.nahidsohel;
+
+public class BasicSpellChecker implements SpellChecker{
+
+    public void init() {
+        System.out.println("init inside Basic Spell Checker");
+    }
+
+    @Override
+    public void checkSpelling(String emailMessage) {
+        if (emailMessage != null) {
+            System.out.println("Checking spelling using BasicSpellChecker...");
+            System.out.println("Spell Checking Completed!!");
+        } else {
+            throw new RuntimeException("An exception occurred " +
+                    "while checking Spelling");
+        }
+    }
+}
