@@ -1,5 +1,6 @@
 # Spring Core
 **Spring [Ioc](#myfootnote1) container**
+
 > - Create Object
 > - Manage Lifecycle Of Object
 > - Inject Object at run time
@@ -85,3 +86,14 @@ _There is a subtle difference between xml based and annotation based configurati
   }
 
 ```
+
+**Bean Scopes**
+<br />
+> - Singleton (Created only once at a time of container start-up.)
+> - Prototype (Each time request)
+> - Request 
+> - Session
+> - Application
+> - WebSocket
+> 
+> Usage: @Scope("singleton")

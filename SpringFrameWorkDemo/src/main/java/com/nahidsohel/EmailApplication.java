@@ -13,5 +13,11 @@ public class EmailApplication {
 //        EmailClient emailClient = new EmailClient(new AdvancedSpellChecker());
         emailClient.sendMail("Hey, It's Nahid.This is my firstMail.");
         emailClient.sendMail("Hey, It's Tom. This is my secondMail.");
+
+        AdvancedSpellChecker advancedSpellChecker = applicationContext.getBean("advancedSpellChecker", AdvancedSpellChecker.class);
+        AdvancedSpellChecker advancedSpellChecker1 = applicationContext.getBean("advancedSpellChecker", AdvancedSpellChecker.class);
+        System.out.println(advancedSpellChecker);
+        System.out.println(advancedSpellChecker1);
+
     }
 }

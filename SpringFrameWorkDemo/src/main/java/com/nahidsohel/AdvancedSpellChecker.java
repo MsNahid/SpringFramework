@@ -1,10 +1,12 @@
 package com.nahidsohel;
 
 import org.springframework.context.annotation.Primary;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
 @Primary
+@Scope("singleton")
 public class AdvancedSpellChecker implements SpellChecker{
     @Override
     public void checkSpelling(String emailMessage) {

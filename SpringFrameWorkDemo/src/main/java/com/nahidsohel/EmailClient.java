@@ -7,11 +7,13 @@ import org.springframework.stereotype.Component;
 @Component
 public class EmailClient {
 
-    private SpellChecker spellChecker;
     @Autowired
-    EmailClient(@Qualifier("basicSpellChecker") SpellChecker spellChecker){
-        this.spellChecker = spellChecker;
-    }
+    @Qualifier("basicSpellChecker")
+    private SpellChecker spellChecker;
+//    @Autowired
+//    EmailClient(@Qualifier("basicSpellChecker") SpellChecker spellChecker){
+//        this.spellChecker = spellChecker;
+//    }
 
 //    public void setSpellChecker(SpellChecker spellChecker) {
 //        this.spellChecker = spellChecker;
