@@ -64,7 +64,7 @@ _There is a subtle difference between xml based and annotation based configurati
     }
 ```
 
-[AutoWire By Name](<a name="myfootnote3"></a>)
+<a name="myfootnote3">Auto Wiring By Name</a>
 ```
   private SpellChecker spellChecker;
   
