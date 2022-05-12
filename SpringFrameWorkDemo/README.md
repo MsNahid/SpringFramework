@@ -115,8 +115,11 @@ _There is a subtle difference between xml based and annotation based configurati
 > - Initialization Phase
 > - Bean Usage
 > - Destruction Phase 
+> - LifeCycle Flow
+>  - ![Alt text](beanLifeCycleFlow.png?raw=true "")
+> 
 >  
->  -
 >  Spring destruction is not managed for **Prototype**
+
 
 
