@@ -6,7 +6,11 @@ public class EmailClient {
 
     private SpellChecker spellChecker;
 
-    EmailClient(SpellChecker spellChecker){
+//    EmailClient(SpellChecker spellChecker){
+//        this.spellChecker = spellChecker;
+//    }
+
+    public void setSpellChecker(SpellChecker spellChecker) {
         this.spellChecker = spellChecker;
     }
 

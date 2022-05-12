@@ -5,20 +5,22 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
     
-    <context:component-scan base-package="com.nahidsohel"></context:component-scan>
+<!--    <context:component-scan base-package="com.nahidsohel"></context:component-scan>-->
 
-<!--    <bean id="emailClient" class="com.nahidsohel.EmailClient">-->
-<!--        <constructor-arg ref="advancedSpellChecker"></constructor-arg>-->
-<!--    </bean>-->
     <bean id="emailClient" class="com.nahidsohel.EmailClient">
-        <constructor-arg ref="basicSpellChecker"></constructor-arg>
+<!--        <constructor-arg ref="advancedSpellChecker"></constructor-arg>-->
+        <property name="spellChecker" ref="basicSpellChecker" />
     </bean>
 
-<!--    <bean id="basicSpellChecker" class="com.nahidsohel.BasicSpellChecker">-->
+<!--    <bean id="emailClient" class="com.nahidsohel.EmailClient">-->
+<!--        <constructor-arg ref="basicSpellChecker"></constructor-arg>-->
 <!--    </bean>-->
 
-<!--    <bean id="advancedSpellChecker" class="com.nahidsohel.AdvancedSpellChecker">-->
-<!--    </bean>-->
+    <bean id="basicSpellChecker" class="com.nahidsohel.BasicSpellChecker">
+    </bean>
+
+    <bean id="advancedSpellChecker" class="com.nahidsohel.AdvancedSpellChecker">
+    </bean>
 
 
 

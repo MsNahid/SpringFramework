@@ -29,7 +29,7 @@
 > - Annotations based configuration
 > - Java based configuration
 
-_There is a subtle difference in xml based and annotation based configuration._
+_There is a subtle difference between xml based and annotation based configuration._
 
 
 
