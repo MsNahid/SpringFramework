@@ -1,6 +1,6 @@
 # Spring Core
 **Spring [Ioc](#myfootnote1) container**
-
+<br />
 > - Create Object
 > - Manage Lifecycle Of Object
 > - Inject Object at run time
@@ -8,11 +8,13 @@
 > - ApplicationContext Interface
 > - ClassPathXmlApplicationContext
 
+<br />
+
 <a name="myfootnote1">IOC</a>
 >Spring IoC Container is the core of Spring Framework. It creates the objects, configures and assembles their dependencies, manages their entire life cycle. The Container uses Dependency Injection(DI) to manage the components that make up the application.
 
 >It implents using Factory Pattern.
-
+<br />
 
 **Dependency Injection**
 > It actually injects an entity outside from the class.And It must be loosely coupled.
@@ -23,7 +25,7 @@
 >  - field injection
 > 
 > _Field injection is harmful_
-
+<br />
 
 **Spring Configuration**
 > - Xml based configuration
@@ -35,6 +37,8 @@ _There is a subtle difference between xml based and annotation based configurati
 
 **Bean**
 > Spring bean is an object that is managed by the spring ioc container.
+
+<br />
 
 **AutoWiring**
 > - [By Type](#myfootnote2)
@@ -55,6 +59,8 @@ _There is a subtle difference between xml based and annotation based configurati
   >  ```
 > - [@Qualifier](#myfootnote4)
 
+<br />
+
 <a name="myfootnote2">Auto Wiring By Type</a>
 ```
     private SpellChecker spellChecker;
@@ -65,6 +71,8 @@ _There is a subtle difference between xml based and annotation based configurati
     }
 ```
 
+<br />
+
 <a name="myfootnote3">Auto Wiring By Name</a>
 ```
   private SpellChecker spellChecker;
@@ -74,6 +82,7 @@ _There is a subtle difference between xml based and annotation based configurati
        this.spellChecker = advancedSpellChecker;
    }
 ```
+<br />
 
 <a name="myfootnote4">Qualifier Annotation</a>
 ```
@@ -86,6 +95,8 @@ _There is a subtle difference between xml based and annotation based configurati
   }
 
 ```
+
+<br />
 
 **Bean Scopes**
 <br />
