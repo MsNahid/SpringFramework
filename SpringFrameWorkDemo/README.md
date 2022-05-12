@@ -122,4 +122,11 @@ _There is a subtle difference between xml based and annotation based configurati
 >  Spring destruction is not managed for **Prototype**
 
 
-
+**Life Cycle CallBack Hooks**
+> - Initializing Bean, DesposableBean
+> - Jsr-250 Annotations (Recommended)
+>   - @PostConstruct
+>   - @PreDestroy
+> - @Bean
+>  - initMethod
+>  - destroyMethod
