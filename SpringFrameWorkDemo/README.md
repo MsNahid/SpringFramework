@@ -90,3 +90,17 @@ _There is a subtle difference between xml based and annotation based configurati
   }
 
 ```
+
+```
+    private SpellChecker spellChecker;
+    @Autowired
+    EmailClient(@Qualifier("basicSpellChecker") SpellChecker spellChecker){
+        this.spellChecker = spellChecker;
+    }
+    
+    @Autowired
+    @Qualifier("basicSpellChecker")
+    private SpellChecker spellChecker;
+    
+    // these two fragments are same
+```
