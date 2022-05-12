@@ -1,9 +1,13 @@
 package com.nahidsohel;
 
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
 import org.springframework.stereotype.Component;
 
-@Component
-public class BasicSpellChecker implements SpellChecker{
+import java.sql.SQLOutput;
+
+//@Component
+public class BasicSpellChecker implements SpellChecker {
 
     public void init() {
         System.out.println("init inside Basic Spell Checker");
@@ -19,4 +23,10 @@ public class BasicSpellChecker implements SpellChecker{
                     "while checking Spelling");
         }
     }
+
+    public void destroy(){
+        System.out.println("Destroy inside Basic Spell Checker.");
+    }
+
+
 }

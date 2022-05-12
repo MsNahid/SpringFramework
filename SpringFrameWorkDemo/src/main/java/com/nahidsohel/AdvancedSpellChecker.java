@@ -1,5 +1,7 @@
 package com.nahidsohel;
 
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
 import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
@@ -7,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Primary
 @Scope("singleton")
-public class AdvancedSpellChecker implements SpellChecker{
+public class AdvancedSpellChecker implements SpellChecker, InitializingBean, DisposableBean {
     @Override
     public void checkSpelling(String emailMessage) {
         if (emailMessage != null) {
@@ -20,5 +22,18 @@ public class AdvancedSpellChecker implements SpellChecker{
         } else {
             throw new RuntimeException("An exception occurred while checking Spelling");
         }
+    }
+
+    // DisposableBean
+    @Override
+    public void destroy() throws Exception {
+        System.out.println("Destroy properties.");
+    }
+
+    // InitializingBean
+    @Override
+    public void afterPropertiesSet() throws Exception {
+        System.out.println("Setting Properties after bean is initialized.");
+
     }
 }

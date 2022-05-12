@@ -108,3 +108,15 @@ _There is a subtle difference between xml based and annotation based configurati
 > - WebSocket
 > 
 > Usage: @Scope("singleton")
+
+<br />
+
+**Bean Life Cycle Phases**
+> - Initialization Phase
+> - Bean Usage
+> - Destruction Phase 
+>  
+>  -
+>  Spring destruction is not managed for **Prototype**
+
+
