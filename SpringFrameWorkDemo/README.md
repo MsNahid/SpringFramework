@@ -77,6 +77,7 @@ _There is a subtle difference between xml based and annotation based configurati
        this.spellChecker = advancedSpellChecker;
    }
 ```
+<br></br>
 
 <a name="myfootnote4">Qualifier Annotation</a>
 ```
