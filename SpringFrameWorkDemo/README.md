@@ -16,6 +16,13 @@
 **Dependency Injection**
 > It actually injects an entity outside from the class.And It must be loosely coupled.
 
+> **Three Types of Dependency Injection**
+>  - Setter injection
+>  - Constructor injection
+>  - field injection
+> 
+> _Field injection is harmful_
+
 
 **Spring Configuration**
 > - Xml based configuration
