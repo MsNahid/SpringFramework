@@ -90,6 +90,7 @@ _There is a subtle difference between xml based and annotation based configurati
   }
 
 ```
+<br />
 
 ```
     private SpellChecker spellChecker;
