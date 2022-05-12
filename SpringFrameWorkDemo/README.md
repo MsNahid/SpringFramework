@@ -7,12 +7,13 @@
 > - ApplicationContext Interface
 > - ClassPathXmlApplicationContext
 
+<br></br>
 <a name="myfootnote1">IOC</a>
 >Spring IoC Container is the core of Spring Framework. It creates the objects, configures and assembles their dependencies, manages their entire life cycle. The Container uses Dependency Injection(DI) to manage the components that make up the application.
 
 >It implents using Factory Pattern.
 
-
+<br></br>
 **Dependency Injection**
 > It actually injects an entity outside from the class.And It must be loosely coupled.
 
@@ -23,7 +24,7 @@
 > 
 > _Field injection is harmful_
 
-
+<br></br>
 **Spring Configuration**
 > - Xml based configuration
 > - Annotations based configuration
@@ -31,7 +32,7 @@
 
 _There is a subtle difference between xml based and annotation based configuration._
 
-
+<br></br>
 **Bean**
 > Spring bean is an object that is managed by the spring ioc container.
 
@@ -54,6 +55,8 @@ _There is a subtle difference between xml based and annotation based configurati
   >  ```
 > - [@Qualifier](#myfootnote4)
 
+<br></br>
+
 <a name="myfootnote2">Auto Wiring By Type</a>
 ```
     private SpellChecker spellChecker;
@@ -63,6 +66,7 @@ _There is a subtle difference between xml based and annotation based configurati
         this.spellChecker = spellChecker;
     }
 ```
+<br></br>
 
 <a name="myfootnote3">Auto Wiring By Name</a>
 ```
