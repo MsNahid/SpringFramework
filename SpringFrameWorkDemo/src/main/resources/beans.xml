@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        https://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <context:component-scan base-package="com.nahidsohel"></context:component-scan>
 
+<!--    <bean id="emailClient" class="com.nahidsohel.EmailClient">-->
+<!--        <constructor-arg ref="advancedSpellChecker"></constructor-arg>-->
+<!--    </bean>-->
     <bean id="emailClient" class="com.nahidsohel.EmailClient">
-        <constructor-arg ref="advancedSpellChecker"></constructor-arg>
+        <constructor-arg ref="basicSpellChecker"></constructor-arg>
     </bean>
 
-    <bean id="basicSpellChecker" class="com.nahidsohel.BasicSpellChecker">
-    </bean>
+<!--    <bean id="basicSpellChecker" class="com.nahidsohel.BasicSpellChecker">-->
+<!--    </bean>-->
 
-    <bean id="advancedSpellChecker" class="com.nahidsohel.AdvancedSpellChecker">
-    </bean>
+<!--    <bean id="advancedSpellChecker" class="com.nahidsohel.AdvancedSpellChecker">-->
+<!--    </bean>-->
 
 
 

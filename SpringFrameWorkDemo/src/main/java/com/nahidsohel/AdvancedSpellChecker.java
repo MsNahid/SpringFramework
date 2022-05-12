@@ -1,5 +1,8 @@
 package com.nahidsohel;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class AdvancedSpellChecker implements SpellChecker{
     @Override
     public void checkSpelling(String emailMessage) {
