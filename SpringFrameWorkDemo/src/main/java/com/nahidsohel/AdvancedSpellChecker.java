@@ -1,7 +1,10 @@
 package com.nahidsohel;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
+@Component
+@Primary
 public class AdvancedSpellChecker implements SpellChecker{
     @Override
     public void checkSpelling(String emailMessage) {

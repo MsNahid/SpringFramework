@@ -32,5 +32,56 @@
 _There is a subtle difference between xml based and annotation based configuration._
 
 
+**Bean**
+> Spring bean is an object that is managed by the spring ioc container.
 
+**AutoWiring**
+> - [By Type](#myfootnote2)
+> - [By Name](#myfootnote3)
+> - @Primary
+>  - When Always use Specific class
+  >  ```
+  >  @Component
+  >  @Primary
+  >  public class AdvancedSpellChecker implements SpellChecker{
+  >   //  This class is used
+  >  }
+  >  
+  >  @Component
+  >  public class BasicSpellChecker implements SpellChecker{
+  >   //  this class is not used
+  >  }
+  >  ```
+> - [@Qualifier](#myfootnote4)
 
+<a name="myfootnote2">Auto Wiring By Type</a>
+```
+    private SpellChecker spellChecker;
+
+    @Autowired
+    EmailClient(BasicSpellChecker spellChecker){
+        this.spellChecker = spellChecker;
+    }
+```
+
+<a name="myfootnote3">Auto Wiring By Name</a>
+```
+  private SpellChecker spellChecker;
+  
+  @Autowired
+   EmailClient(SpellChecker advancedSpellChecker){
+       this.spellChecker = advancedSpellChecker;
+   }
+```
+
+<a name="myfootnote4">Qualifier Annotation</a>
+```
+  private SpellChecker spellChecker;
+  @Autowired
+  EmailClient(@Qualifier("basicSpellChecker") SpellChecker spellChecker){
+     this.spellChecker = spellChecker;
+     
+     // Qualifer overrides @Primary annotation
+  }
+
+```
