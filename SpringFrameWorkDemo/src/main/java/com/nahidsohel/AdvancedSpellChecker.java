@@ -2,14 +2,20 @@ package com.nahidsohel;
 
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Primary;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
 @Primary
 @Scope("singleton")
+@PropertySource(value = "classpath:/application.properties")
 public class AdvancedSpellChecker implements SpellChecker, InitializingBean, DisposableBean {
+
+    @Value("${app.database.uri}")
+    private String dataBaseUri;
     @Override
     public void checkSpelling(String emailMessage) {
         if (emailMessage != null) {

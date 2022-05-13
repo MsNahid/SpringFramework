@@ -130,3 +130,10 @@ _There is a subtle difference between xml based and annotation based configurati
 > - @Bean
 >  - initMethod
 >  - destroyMethod
+
+<br />
+
+**Spring Expression Language(SPEL)**
+> - @PropertySource -> scan class path
+> - @Value       -> "${name}"
+
