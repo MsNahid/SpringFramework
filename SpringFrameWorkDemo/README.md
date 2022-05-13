@@ -1,6 +1,5 @@
 # Spring Core
-**Spring [Ioc](#myfootnote1) container**
-<br />
+**Spring [Ioc](#myfootnote1) container** <hr />
 > - Create Object
 > - Manage Lifecycle Of Object
 > - Inject Object at run time
@@ -10,13 +9,13 @@
 
 <br />
 
-<a name="myfootnote1">IOC</a>
+<a name="myfootnote1">IOC</a> <hr />
 >Spring IoC Container is the core of Spring Framework. It creates the objects, configures and assembles their dependencies, manages their entire life cycle. The Container uses Dependency Injection(DI) to manage the components that make up the application.
 
 >It implents using Factory Pattern.
 <br />
 
-**Dependency Injection**
+**Dependency Injection** <hr />
 > It actually injects an entity outside from the class.And It must be loosely coupled.
 
 > **Three Types of Dependency Injection**
@@ -27,7 +26,7 @@
 > _Field injection is harmful_
 <br />
 
-**Spring Configuration**
+**Spring Configuration** <hr />
 > - Xml based configuration
 > - Annotations based configuration
 > - Java based configuration
@@ -35,12 +34,12 @@
 _There is a subtle difference between xml based and annotation based configuration._
 
 
-**Bean**
+**Bean** <hr />
 > Spring bean is an object that is managed by the spring ioc container.
 
 <br />
 
-**AutoWiring**
+**AutoWiring** <hr />
 > - [By Type](#myfootnote2)
 > - [By Name](#myfootnote3)
 > - @Primary
@@ -61,7 +60,7 @@ _There is a subtle difference between xml based and annotation based configurati
 
 <br />
 
-<a name="myfootnote2">Auto Wiring By Type</a>
+<a name="myfootnote2">**Auto Wiring By Type**</a> <hr />
 ```
     private SpellChecker spellChecker;
 
@@ -73,7 +72,7 @@ _There is a subtle difference between xml based and annotation based configurati
 
 <br />
 
-<a name="myfootnote3">Auto Wiring By Name</a>
+<a name="myfootnote3">**Auto Wiring By Name**</a> <hr />
 ```
   private SpellChecker spellChecker;
   
@@ -84,7 +83,7 @@ _There is a subtle difference between xml based and annotation based configurati
 ```
 <br />
 
-<a name="myfootnote4">Qualifier Annotation</a>
+<a name="myfootnote4">**Qualifier Annotation**</a> <hr />
 ```
   private SpellChecker spellChecker;
   @Autowired
@@ -98,8 +97,7 @@ _There is a subtle difference between xml based and annotation based configurati
 
 <br />
 
-**Bean Scopes**
-<br />
+**Bean Scopes** <hr />
 > - Singleton (Created only once at a time of container start-up.)
 > - Prototype (Each time request)
 > - Request 
@@ -111,7 +109,7 @@ _There is a subtle difference between xml based and annotation based configurati
 
 <br />
 
-**Bean Life Cycle Phases**
+**Bean Life Cycle Phases** <hr />
 > - Initialization Phase
 > - Bean Usage
 > - Destruction Phase 
@@ -121,8 +119,9 @@ _There is a subtle difference between xml based and annotation based configurati
 >  
 >  Spring destruction is not managed for **Prototype**
 
+<br />
 
-**Life Cycle CallBack Hooks**
+**Life Cycle CallBack Hooks** <hr />
 > - Initializing Bean, DesposableBean
 > - Jsr-250 Annotations (Recommended)
 >   - @PostConstruct
@@ -133,7 +132,13 @@ _There is a subtle difference between xml based and annotation based configurati
 
 <br />
 
-**Spring Expression Language(SPEL)**
+**Spring Expression Language(SPEL)** <hr />
 > - @PropertySource -> scan class path
 > - @Value       -> "${name}"
 
+<br />
+
+**Resources** <hr />
+1. https://www.youtube.com/watch?v=ZwcHeLhvuq4&ab_channel=ProgrammingTechie
+2. https://www.youtube.com/watch?v=hYSMHiJZcBM&ab_channel=DailyCodeBuffer
+3. https://www.geeksforgeeks.org/bean-life-cycle-in-java-spring/#:~:text=Bean%20life%20cycle%20is%20managed,the%20spring%20container%20is%20closed.

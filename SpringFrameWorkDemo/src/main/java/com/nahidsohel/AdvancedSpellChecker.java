@@ -24,6 +24,7 @@ public class AdvancedSpellChecker implements SpellChecker, InitializingBean, Dis
             // Check spellings in the email Message
             System.out.println("Checking Spelling using Advanced Spell Checker..");
             System.out.println("Spell Checking Completed!!");
+            System.out.println("Data Source Path: " + dataBaseUri);
 
         } else {
             throw new RuntimeException("An exception occurred while checking Spelling");
