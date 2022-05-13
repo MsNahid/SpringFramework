@@ -43,19 +43,19 @@ _There is a subtle difference between xml based and annotation based configurati
 > - [By Type](#myfootnote2)
 > - [By Name](#myfootnote3)
 > - @Primary
->  - When Always use Specific class
-  >  ```
-  >  @Component
-  >  @Primary
-  >  public class AdvancedSpellChecker implements SpellChecker{
-  >   //  This class is used
-  >  }
-  >  
-  >  @Component
-  >  public class BasicSpellChecker implements SpellChecker{
-  >   //  this class is not used
-  >  }
-  >  ```
+>   - When Always use Specific class
+   >  ```
+   >  @Component
+   >  @Primary
+   >  public class AdvancedSpellChecker implements SpellChecker{
+   >   //  This class is used
+   >  }
+   >  
+   >  @Component
+   >  public class BasicSpellChecker implements SpellChecker{
+   >   //  this class is not used
+   >  }
+   >  ```
 > - [@Qualifier](#myfootnote4)
 
 <br />
