@@ -127,8 +127,8 @@ _There is a subtle difference between xml based and annotation based configurati
 >   - @PostConstruct
 >   - @PreDestroy
 > - @Bean
->  - initMethod
->  - destroyMethod
+>   - initMethod
+>   - destroyMethod
 
 <br />
 
